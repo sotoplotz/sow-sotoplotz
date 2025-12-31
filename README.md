@@ -54,6 +54,7 @@ La estructura inicial del proyecto es la siguiente:
 │
 └── /assets
     └── /images
+```
 
 ---
 
@@ -93,6 +94,7 @@ Se han incorporado las configuraciones mínimas necesarias para garantizar un co
 Durante la planificación inicial del documento se valoró la posibilidad de estructurar el contenido utilizando únicamente etiquetas `<div>`.
 
 **Problemas detectados:**
+
 - Pérdida de semántica en el documento.
 - Menor accesibilidad para usuarios que emplean tecnologías asistivas.
 - Código menos legible y con menor valor académico y profesional.
@@ -104,6 +106,7 @@ Durante la planificación inicial del documento se valoró la posibilidad de est
 En una primera aproximación, la navegación principal se planteó como una serie de enlaces sin una estructura jerárquica definida.
 
 **Problemas detectados:**
+
 - Dificultad de interpretación por parte de lectores de pantalla.
 - Menor claridad en la organización del menú de navegación.
 - Incumplimiento de buenas prácticas de accesibilidad.

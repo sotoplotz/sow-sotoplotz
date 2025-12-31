@@ -117,3 +117,41 @@ footer {
     border-top: 1px solid #dddddd;
     margin-top: 3rem;
 }
+
+/* =========================
+   Diseño responsive (Mobile First)
+   ========================= */
+
+/* Header layout */
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Navegación en mobile */
+nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* =========================
+   Breakpoint: tablets y escritorio
+   ========================= */
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    main {
+        padding-top: 2.5rem;
+    }
+}

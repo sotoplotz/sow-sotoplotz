@@ -1,131 +1,110 @@
-## 🧩 Commit 2  
+## 🧩 Commit 3  
 
-### Maquetación base con CSS, tipografía y jerarquía visual
+### Diseño responsive con Flexbox y adaptación mobile-first
 
-**Commit:** `feat: maquetación base con CSS y jerarquía visual`
+**Commit:** `feat: diseño responsive con Flexbox y adaptación mobile-first`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es iniciar la maquetación visual del proyecto mediante CSS, estableciendo una jerarquía tipográfica clara y un layout base coherente con los principios del diseño web moderno.
+El objetivo de este commit es adaptar el sitio web a distintos tamaños de pantalla mediante un enfoque mobile-first, utilizando Flexbox y media queries para construir un diseño responsive y accesible.
 
-Se busca traducir la estructura semántica previamente definida en HTML a una primera propuesta visual, manteniendo la separación entre contenido y presentación, y sentando las bases para un diseño escalable y responsive.
+Se busca garantizar una correcta visualización y usabilidad del sitio tanto en dispositivos móviles como en pantallas de mayor tamaño, uno de los principios fundamentales del diseño web moderno.
 
 ---
 
 ## 📚 Relación con la guía docente
 
-Este commit se vincula con los siguientes contenidos de la asignatura:
+Este commit se relaciona directamente con los siguientes contenidos de la asignatura:
 
-- Maquetación del front-end mediante hojas de estilo CSS
-- Tipografía y jerarquía visual en interfaces web
-- Separación entre contenido (HTML) y estilo (CSS)
-- Buenas prácticas de código mantenible
-- Valores del diseño web: legibilidad, claridad y accesibilidad
-
----
-
-## 🎨 Desarrollo técnico realizado
-
-### Hoja de estilos principal
-
-Se ha desarrollado el archivo `style.css`, vinculado al documento HTML desde el commit anterior, para definir los estilos globales del sitio.
-
-Este enfoque permite centralizar la presentación visual y facilita el mantenimiento del proyecto.
+- Maquetación adaptada a distintos tamaños de pantalla
+- Diseño responsive y adaptable
+- Uso de Flexbox para la construcción de layouts
+- Breakpoints y media queries
+- Valores del diseño web: accesibilidad, usabilidad y experiencia de usuario
 
 ---
 
-### Reset CSS y control del box model
+## 📐 Desarrollo técnico realizado
 
-Se ha aplicado un reset básico de estilos para eliminar márgenes y paddings por defecto del navegador, junto con la propiedad `box-sizing: border-box`.
+### Enfoque mobile-first
 
-Esta decisión garantiza un comportamiento consistente del layout en distintos navegadores.
+El diseño se ha planteado siguiendo una estrategia mobile-first, definiendo primero el comportamiento del layout en dispositivos móviles y adaptándolo posteriormente a pantallas de mayor tamaño mediante media queries.
 
----
-
-### Uso de variables CSS
-
-Se han definido variables CSS en `:root` para colores, tipografía y ancho máximo del layout.
-
-El uso de variables mejora la escalabilidad del proyecto y facilita cambios globales en fases posteriores.
+Este enfoque prioriza la simplicidad, el rendimiento y la accesibilidad.
 
 ---
 
-### Tipografía y jerarquía visual
+### Uso de Flexbox en la cabecera y navegación
 
-Se ha establecido una jerarquía tipográfica clara mediante:
+Se ha aplicado Flexbox al contenedor del `header` y a la lista de navegación para controlar la disposición de los elementos de forma flexible y adaptable.
 
-- Tipografía base sans-serif orientada a la lectura en pantalla
-- Diferenciación de tamaños y pesos para encabezados (`h1`, `h2`)
-- Control del ancho de línea del texto para mejorar la legibilidad
+En dispositivos móviles:
 
-Estas decisiones guían visualmente al usuario y refuerzan la estructura del contenido.
+- La cabecera se organiza en columna
+- El menú de navegación se muestra en vertical
 
 ---
 
-### Layout base
+### Media queries y breakpoint principal
 
-Se ha definido un layout centrado mediante un ancho máximo y márgenes automáticos para los principales bloques estructurales (`header`, `main`, `footer`).
+Se ha definido un breakpoint principal a partir de los `768px`, comúnmente utilizado para la transición entre dispositivos móviles y tablets/escritorio.
 
-Este planteamiento crea una composición clara y ordenada, preparada para adaptarse a distintos tamaños de pantalla.
+A partir de este punto:
+
+- La cabecera se reorganiza en una fila horizontal
+- La navegación pasa a disposición horizontal
+- Se ajustan los espacios internos del contenido principal
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Inconsistencias visuales entre navegadores
+### Navegación poco usable en pantallas pequeñas
 
-Al aplicar los primeros estilos se detectaron diferencias en márgenes y espaciados según el navegador utilizado.
+En una primera versión, la navegación horizontal resultaba poco usable en dispositivos móviles.
 
 **Problemas detectados:**
 
-- Resultados visuales inconsistentes
-- Dificultad para controlar el espacio entre elementos
+- Enlaces demasiado juntos
+- Dificultad de interacción táctil
+- Lectura poco clara del menú
 
 ---
 
-### Jerarquía tipográfica poco clara en una primera iteración
+### Desajustes en la alineación del header
 
-En una primera versión, los tamaños tipográficos no diferenciaban correctamente los distintos niveles de información.
+Al adaptar el layout a pantallas grandes, se produjeron desajustes en la alineación vertical de los elementos del header.
 
 **Problemas detectados:**
 
-- Lectura poco fluida
-- Escasa diferenciación entre títulos y texto
+- Falta de alineación entre título y navegación
+- Espaciados inconsistentes
 
 ---
 
 ## ✅ Soluciones aplicadas
 
-### Aplicación de un reset CSS controlado
+### Reorganización vertical del menú en mobile
 
-Se incorporó un reset básico y el uso de `box-sizing: border-box` para asegurar consistencia visual entre navegadores.
+Se optó por mostrar el menú de navegación en columna en dispositivos móviles, mejorando la legibilidad y la interacción táctil.
 
 ---
 
-### Definición consciente de la jerarquía tipográfica
+### Ajuste de alineaciones con Flexbox
 
-Se ajustaron tamaños, pesos y espaciados tipográficos para establecer una jerarquía clara y mejorar la experiencia de lectura.
+Se utilizaron propiedades como `align-items` y `justify-content` para controlar la alineación del header en pantallas grandes, logrando una disposición equilibrada y clara.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit evidencia el papel fundamental del CSS en la construcción de interfaces web claras y accesibles.
+Este commit refuerza la importancia del diseño responsive como parte esencial del desarrollo web actual.
 
 Principales aprendizajes:
 
-- La tipografía es un elemento clave en la experiencia de usuario
-- Un reset CSS facilita el control del diseño
-- La jerarquía visual guía la lectura y comprensión del contenido
-- La maquetación debe abordarse de forma progresiva y estructurada
-
----
-
-## 📍 Estado actual del proyecto
-
-- Maquetación base implementada mediante CSS
-- Jerarquía tipográfica definida
-- Layout inicial claro y ordenado
-- Proyecto preparado para abordar diseño responsive en el siguiente commit
+- El enfoque mobile-first mejora la usabilidad y el rendimiento
+- Flexbox es una herramienta eficaz para layouts adaptables
+- Las media queries permiten adaptar el diseño de forma progresiva
+- Un diseño responsive debe pensarse desde la estructura, no añadirse al

@@ -1,152 +1,131 @@
-# 📘 Análisis de Sitios Web Sobresalientes
+## 🧩 Commit 2  
 
-## Información general del proyecto
+### Maquetación base con CSS, tipografía y jerarquía visual
 
-Este proyecto consiste en el desarrollo de un sitio web dedicado al análisis crítico de sitios web sobresalientes, abordando aspectos relacionados con el diseño visual, la experiencia de usuario (UX/UI) y la implementación técnica en el frontend.
-
-El desarrollo se realiza utilizando tecnologías web estándar (HTML5, CSS3 y JavaScript), siguiendo las buenas prácticas profesionales, los estándares actuales de la web y los criterios académicos establecidos en la asignatura **Diseño de Aplicaciones Móviles y WebApp**.
-
-El proyecto se construye de forma progresiva mediante commits documentados, justificando en cada fase las decisiones técnicas, conceptuales y de diseño adoptadas.
-
----
-
-## 🧩 Commit 1  
-
-### Inicialización del proyecto y estructura base HTML semántica
-
-**Commit:** `chore: inicialización del proyecto y estructura base HTML semántica`
+**Commit:** `feat: maquetación base con CSS y jerarquía visual`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este primer commit es establecer una base sólida y profesional para el proyecto, definiendo la estructura inicial del sitio web y asegurando un uso correcto del lenguaje HTML5 desde una perspectiva semántica, accesible y mantenible.
+El objetivo de este commit es iniciar la maquetación visual del proyecto mediante CSS, estableciendo una jerarquía tipográfica clara y un layout base coherente con los principios del diseño web moderno.
 
-Este commit se centra en la fase de conceptualización y estructura, sin aplicar todavía estilos visuales ni interactividad.
+Se busca traducir la estructura semántica previamente definida en HTML a una primera propuesta visual, manteniendo la separación entre contenido y presentación, y sentando las bases para un diseño escalable y responsive.
 
 ---
 
 ## 📚 Relación con la guía docente
 
-Este commit se vincula directamente con los siguientes contenidos y resultados de aprendizaje de la asignatura:
+Este commit se vincula con los siguientes contenidos de la asignatura:
 
-- Fundamentos y semántica del HTML + CSS moderno
-- Comprensión del diseño de una aplicación digital interactiva
-- Traslado del contenido a un entorno web mediante HTML
-- Uso correcto de estándares de desarrollo web
-- Introducción al trabajo con control de versiones y documentación
-
----
-
-## 🗂️ Estructura del proyecto
-
-La estructura inicial del proyecto es la siguiente:
-
-```txt
-/analisis-web
-│── index.html
-│
-├── /css
-│   └── style.css
-│
-├── /js
-│   └── main.js
-│
-└── /assets
-    └── /images
-```
+- Maquetación del front-end mediante hojas de estilo CSS
+- Tipografía y jerarquía visual en interfaces web
+- Separación entre contenido (HTML) y estilo (CSS)
+- Buenas prácticas de código mantenible
+- Valores del diseño web: legibilidad, claridad y accesibilidad
 
 ---
 
-## 🧱 Desarrollo técnico realizado
+## 🎨 Desarrollo técnico realizado
 
-### Documento HTML5 semántico
+### Hoja de estilos principal
 
-Se ha desarrollado el archivo `index.html` empleando una estructura semántica completa de HTML5, con el objetivo de dotar al documento de significado, claridad estructural y accesibilidad.
+Se ha desarrollado el archivo `style.css`, vinculado al documento HTML desde el commit anterior, para definir los estilos globales del sitio.
 
-Las principales etiquetas semánticas utilizadas son:
-
-- `<header>`: contiene la cabecera del sitio y la navegación principal.
-- `<nav>`: agrupa los enlaces de navegación del sitio.
-- `<main>`: delimita el contenido principal del documento.
-- `<section>`: organiza el contenido en bloques temáticos.
-- `<footer>`: incluye la información de cierre del sitio.
-
-El uso de estas etiquetas facilita la interpretación del contenido por parte de motores de búsqueda y tecnologías asistivas, además de mejorar la mantenibilidad del código.
+Este enfoque permite centralizar la presentación visual y facilita el mantenimiento del proyecto.
 
 ---
 
-### Configuración básica del documento
+### Reset CSS y control del box model
 
-Se han incorporado las configuraciones mínimas necesarias para garantizar un comportamiento correcto del documento en distintos dispositivos y navegadores:
+Se ha aplicado un reset básico de estilos para eliminar márgenes y paddings por defecto del navegador, junto con la propiedad `box-sizing: border-box`.
 
-- Declaración `<!DOCTYPE html>` para activar el modo estándar del navegador.
-- Atributo `lang="es"` en la etiqueta `<html>` para mejorar la accesibilidad y el SEO.
-- Metaetiqueta `<meta name="viewport">` para asegurar una visualización adaptada a dispositivos móviles.
-- Enlace a la hoja de estilos principal (`style.css`) y al archivo JavaScript (`main.js`), manteniendo la separación entre estructura, estilo y comportamiento.
+Esta decisión garantiza un comportamiento consistente del layout en distintos navegadores.
+
+---
+
+### Uso de variables CSS
+
+Se han definido variables CSS en `:root` para colores, tipografía y ancho máximo del layout.
+
+El uso de variables mejora la escalabilidad del proyecto y facilita cambios globales en fases posteriores.
+
+---
+
+### Tipografía y jerarquía visual
+
+Se ha establecido una jerarquía tipográfica clara mediante:
+
+- Tipografía base sans-serif orientada a la lectura en pantalla
+- Diferenciación de tamaños y pesos para encabezados (`h1`, `h2`)
+- Control del ancho de línea del texto para mejorar la legibilidad
+
+Estas decisiones guían visualmente al usuario y refuerzan la estructura del contenido.
+
+---
+
+### Layout base
+
+Se ha definido un layout centrado mediante un ancho máximo y márgenes automáticos para los principales bloques estructurales (`header`, `main`, `footer`).
+
+Este planteamiento crea una composición clara y ordenada, preparada para adaptarse a distintos tamaños de pantalla.
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Uso excesivo de etiquetas `<div>`
+### Inconsistencias visuales entre navegadores
 
-Durante la planificación inicial del documento se valoró la posibilidad de estructurar el contenido utilizando únicamente etiquetas `<div>`.
+Al aplicar los primeros estilos se detectaron diferencias en márgenes y espaciados según el navegador utilizado.
 
 **Problemas detectados:**
 
-- Pérdida de semántica en el documento.
-- Menor accesibilidad para usuarios que emplean tecnologías asistivas.
-- Código menos legible y con menor valor académico y profesional.
+- Resultados visuales inconsistentes
+- Dificultad para controlar el espacio entre elementos
 
 ---
 
-### Navegación sin jerarquía estructural clara
+### Jerarquía tipográfica poco clara en una primera iteración
 
-En una primera aproximación, la navegación principal se planteó como una serie de enlaces sin una estructura jerárquica definida.
+En una primera versión, los tamaños tipográficos no diferenciaban correctamente los distintos niveles de información.
 
 **Problemas detectados:**
 
-- Dificultad de interpretación por parte de lectores de pantalla.
-- Menor claridad en la organización del menú de navegación.
-- Incumplimiento de buenas prácticas de accesibilidad.
+- Lectura poco fluida
+- Escasa diferenciación entre títulos y texto
 
 ---
 
 ## ✅ Soluciones aplicadas
 
-### Uso consciente de HTML semántico
+### Aplicación de un reset CSS controlado
 
-Se optó por emplear etiquetas semánticas de HTML5 para representar correctamente cada bloque funcional del documento, reservando el uso de `<div>` únicamente para casos específicos que lo requieran en futuras fases del proyecto.
-
-Esta decisión mejora la accesibilidad, la claridad del código y la coherencia con los estándares web actuales.
+Se incorporó un reset básico y el uso de `box-sizing: border-box` para asegurar consistencia visual entre navegadores.
 
 ---
 
-### Estructuración correcta del menú de navegación
+### Definición consciente de la jerarquía tipográfica
 
-La navegación principal se encapsuló dentro de la etiqueta `<nav>` y se organizó mediante una lista no ordenada `<ul>`, siguiendo las recomendaciones de accesibilidad y estructura semántica.
-
-Esta solución facilita la comprensión del menú tanto para usuarios como para tecnologías asistivas.
+Se ajustaron tamaños, pesos y espaciados tipográficos para establecer una jerarquía clara y mejorar la experiencia de lectura.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este primer commit pone de relieve la importancia de una correcta planificación estructural antes de abordar aspectos visuales o interactivos.
+Este commit evidencia el papel fundamental del CSS en la construcción de interfaces web claras y accesibles.
 
-Los principales aprendizajes obtenidos son:
+Principales aprendizajes:
 
-- El HTML define tanto la estructura como el significado del contenido.
-- Una semántica adecuada mejora la accesibilidad, el SEO y la calidad del proyecto.
-- Las decisiones estructurales iniciales condicionan el desarrollo posterior.
-- Documentar el proceso desde el inicio aporta rigor académico y claridad al proyecto.
+- La tipografía es un elemento clave en la experiencia de usuario
+- Un reset CSS facilita el control del diseño
+- La jerarquía visual guía la lectura y comprensión del contenido
+- La maquetación debe abordarse de forma progresiva y estructurada
 
 ---
 
 ## 📍 Estado actual del proyecto
 
-- Proyecto inicializado correctamente.
-- Estructura de carpetas definida.
-- Documento HTML5 semántico implementado.
-- Base preparada para iniciar la maquetación visual con CSS en el siguiente commit.
+- Maquetación base implementada mediante CSS
+- Jerarquía tipográfica definida
+- Layout inicial claro y ordenado
+- Proyecto preparado para abordar diseño responsive en el siguiente commit

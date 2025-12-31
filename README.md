@@ -1,110 +1,115 @@
-## 🧩 Commit 3  
+## 🧩 Commit 4  
 
-### Diseño responsive con Flexbox y adaptación mobile-first
+### Adaptación de la estructura HTML a la propuesta semántica docente
 
-**Commit:** `feat: diseño responsive con Flexbox y adaptación mobile-first`
+**Commit:** `feat: adaptación de la estructura HTML a la propuesta semántica docente`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es adaptar el sitio web a distintos tamaños de pantalla mediante un enfoque mobile-first, utilizando Flexbox y media queries para construir un diseño responsive y accesible.
+El objetivo de este commit es adaptar la estructura del documento HTML a la propuesta semántica indicada por el profesor en la práctica de análisis web, alineando el proyecto con el marco docente de la asignatura.
 
-Se busca garantizar una correcta visualización y usabilidad del sitio tanto en dispositivos móviles como en pantallas de mayor tamaño, uno de los principios fundamentales del diseño web moderno.
-
----
-
-## 📚 Relación con la guía docente
-
-Este commit se relaciona directamente con los siguientes contenidos de la asignatura:
-
-- Maquetación adaptada a distintos tamaños de pantalla
-- Diseño responsive y adaptable
-- Uso de Flexbox para la construcción de layouts
-- Breakpoints y media queries
-- Valores del diseño web: accesibilidad, usabilidad y experiencia de usuario
+Este paso refuerza el rigor académico del proyecto y garantiza la coherencia entre los contenidos desarrollados y las directrices proporcionadas en clase.
 
 ---
 
-## 📐 Desarrollo técnico realizado
+## 📚 Relación con la guía docente y la práctica
 
-### Enfoque mobile-first
+Este commit se vincula directamente con:
 
-El diseño se ha planteado siguiendo una estrategia mobile-first, definiendo primero el comportamiento del layout en dispositivos móviles y adaptándolo posteriormente a pantallas de mayor tamaño mediante media queries.
+- Fundamentos y semántica del HTML5
+- Estructuración correcta de la información
+- Uso académico de etiquetas semánticas
+- Análisis de sitios web premiados
+- Seguimiento de directrices docentes específicas
 
-Este enfoque prioriza la simplicidad, el rendimiento y la accesibilidad.
-
----
-
-### Uso de Flexbox en la cabecera y navegación
-
-Se ha aplicado Flexbox al contenedor del `header` y a la lista de navegación para controlar la disposición de los elementos de forma flexible y adaptable.
-
-En dispositivos móviles:
-
-- La cabecera se organiza en columna
-- El menú de navegación se muestra en vertical
+La estructura adoptada responde explícitamente al esquema propuesto en la práctica de análisis web del profesor.
 
 ---
 
-### Media queries y breakpoint principal
+## 🧱 Desarrollo técnico realizado
 
-Se ha definido un breakpoint principal a partir de los `768px`, comúnmente utilizado para la transición entre dispositivos móviles y tablets/escritorio.
+### Refactorización de la estructura HTML
 
-A partir de este punto:
+Se ha reestructurado completamente el archivo `index.html` para ajustarlo a la estructura semántica propuesta, manteniendo un uso correcto de etiquetas HTML5.
 
-- La cabecera se reorganiza en una fila horizontal
-- La navegación pasa a disposición horizontal
-- Se ajustan los espacios internos del contenido principal
+La estructura final del documento se organiza en:
+
+- `<header>` con título principal y navegación fija
+- `<nav>` con enlaces internos a las distintas secciones de análisis
+- `<main>` como contenedor del contenido principal
+- `<section>` independientes para cada sitio web analizado
+- `<footer>` con información institucional y académica
+
+---
+
+### Navegación interna mediante anclajes
+
+Cada elemento del menú de navegación enlaza con una sección específica del documento mediante identificadores (`id`).
+
+Este sistema:
+
+- Mejora la usabilidad
+- Facilita la navegación dentro de documentos largos
+- Refuerza la coherencia estructural del análisis
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Navegación poco usable en pantallas pequeñas
+### Desalineación con la estructura previa del proyecto
 
-En una primera versión, la navegación horizontal resultaba poco usable en dispositivos móviles.
+La estructura inicial del proyecto no seguía exactamente el esquema propuesto en la práctica docente.
 
 **Problemas detectados:**
 
-- Enlaces demasiado juntos
-- Dificultad de interacción táctil
-- Lectura poco clara del menú
+- Riesgo de incoherencia con los criterios de evaluación
+- Posible penalización por no seguir las directrices del ejercicio
 
 ---
 
-### Desajustes en la alineación del header
+### Necesidad de reorganizar el contenido existente
 
-Al adaptar el layout a pantallas grandes, se produjeron desajustes en la alineación vertical de los elementos del header.
+La introducción de secciones específicas por sitio web exigió replantear la organización del contenido dentro del `<main>`.
 
 **Problemas detectados:**
 
-- Falta de alineación entre título y navegación
-- Espaciados inconsistentes
+- Necesidad de refactorizar sin romper el CSS existente
+- Mantener la claridad semántica del documento
 
 ---
 
 ## ✅ Soluciones aplicadas
 
-### Reorganización vertical del menú en mobile
+### Alineación estricta con la propuesta docente
 
-Se optó por mostrar el menú de navegación en columna en dispositivos móviles, mejorando la legibilidad y la interacción táctil.
+Se adoptó de forma explícita la estructura HTML indicada por el profesor, priorizando el cumplimiento de los criterios académicos frente a decisiones personales de diseño.
 
 ---
 
-### Ajuste de alineaciones con Flexbox
+### Uso de secciones independientes y semánticas
 
-Se utilizaron propiedades como `align-items` y `justify-content` para controlar la alineación del header en pantallas grandes, logrando una disposición equilibrada y clara.
+Cada sitio web analizado se encapsuló dentro de una `<section>` con su correspondiente encabezado `<h2>`, facilitando la lectura, el análisis y la futura ampliación del contenido.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit refuerza la importancia del diseño responsive como parte esencial del desarrollo web actual.
+Este commit pone de manifiesto la importancia de adaptar un proyecto a un contexto académico concreto.
 
 Principales aprendizajes:
 
-- El enfoque mobile-first mejora la usabilidad y el rendimiento
-- Flexbox es una herramienta eficaz para layouts adaptables
-- Las media queries permiten adaptar el diseño de forma progresiva
-- Un diseño responsive debe pensarse desde la estructura, no añadirse al
+- La semántica HTML es clave en proyectos de análisis y documentación
+- Seguir directrices docentes forma parte del trabajo profesional
+- Refactorizar estructura sin romper estilos es una habilidad fundamental
+- Un buen HTML facilita la escalabilidad y el análisis posterior
+
+---
+
+## 📍 Estado actual del proyecto
+
+- Estructura HTML alineada con la propuesta docente
+- Navegación interna funcional
+- Documento preparado para desarrollar análisis detallados por sección
+- Base sólida para introducir contenido analítico y JavaScript en próximos commits

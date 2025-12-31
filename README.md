@@ -1,115 +1,128 @@
-## 🧩 Commit 4  
+## 🧩 Commit 5  
 
-### Adaptación de la estructura HTML a la propuesta semántica docente
+### Navegación sticky, scroll suave y mejoras de interacción
 
-**Commit:** `feat: adaptación de la estructura HTML a la propuesta semántica docente`
+**Commit:** `feat: navegación sticky, scroll suave y mejoras de interacción`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es adaptar la estructura del documento HTML a la propuesta semántica indicada por el profesor en la práctica de análisis web, alineando el proyecto con el marco docente de la asignatura.
+El objetivo de este commit es mejorar la experiencia de navegación del sitio web mediante la implementación de una barra de navegación persistente (sticky), un comportamiento de scroll suave y estados interactivos en los enlaces del menú.
 
-Este paso refuerza el rigor académico del proyecto y garantiza la coherencia entre los contenidos desarrollados y las directrices proporcionadas en clase.
+Estas mejoras refuerzan la usabilidad del sitio y facilitan la exploración del contenido analítico, especialmente en documentos largos.
 
 ---
 
 ## 📚 Relación con la guía docente y la práctica
 
-Este commit se vincula directamente con:
+Este commit se alinea con los siguientes contenidos de la asignatura:
 
-- Fundamentos y semántica del HTML5
-- Estructuración correcta de la información
-- Uso académico de etiquetas semánticas
-- Análisis de sitios web premiados
-- Seguimiento de directrices docentes específicas
+- Patrones UI de navegación
+- Mejora de la experiencia de usuario (UX)
+- Uso de propiedades modernas de CSS
+- Microinteracciones y feedback visual
+- Análisis de patrones reales utilizados en sitios premiados
 
-La estructura adoptada responde explícitamente al esquema propuesto en la práctica de análisis web del profesor.
+La implementación sigue la propuesta técnica facilitada por el profesor en la práctica.
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-### Refactorización de la estructura HTML
+### Navegación persistente (sticky)
 
-Se ha reestructurado completamente el archivo `index.html` para ajustarlo a la estructura semántica propuesta, manteniendo un uso correcto de etiquetas HTML5.
+Se ha aplicado la propiedad `position: sticky` a la etiqueta `<nav>`, permitiendo que el menú de navegación permanezca visible en la parte superior de la pantalla durante el desplazamiento vertical.
 
-La estructura final del documento se organiza en:
-
-- `<header>` con título principal y navegación fija
-- `<nav>` con enlaces internos a las distintas secciones de análisis
-- `<main>` como contenedor del contenido principal
-- `<section>` independientes para cada sitio web analizado
-- `<footer>` con información institucional y académica
+Este patrón mejora la accesibilidad al contenido y facilita el cambio entre secciones.
 
 ---
 
-### Navegación interna mediante anclajes
+### Scroll suave entre secciones
 
-Cada elemento del menú de navegación enlaza con una sección específica del documento mediante identificadores (`id`).
+Se ha incorporado la propiedad `scroll-behavior: smooth` a la etiqueta `<html>`, logrando una transición suave al navegar entre las distintas secciones mediante enlaces internos.
 
-Este sistema:
+Este comportamiento mejora la percepción de fluidez y la experiencia de usuario.
 
-- Mejora la usabilidad
-- Facilita la navegación dentro de documentos largos
-- Refuerza la coherencia estructural del análisis
+---
+
+### Estilos visuales del header
+
+El encabezado del sitio se ha reforzado visualmente mediante:
+
+- Fondo blanco
+- Sombra suave (`box-shadow`)
+
+Esta decisión permite separar visualmente la navegación del contenido principal y mejora la jerarquía visual del sitio.
+
+---
+
+### Estados interactivos en enlaces
+
+Se han definido estados `:hover` y `:focus` para los enlaces del menú de navegación, proporcionando feedback visual al usuario.
+
+Estos estados:
+
+- Mejoran la usabilidad
+- Refuerzan la accesibilidad mediante navegación por teclado
+- Aportan claridad en la interacción
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Desalineación con la estructura previa del proyecto
+### Pérdida de referencia al desplazarse por el documento
 
-La estructura inicial del proyecto no seguía exactamente el esquema propuesto en la práctica docente.
+Antes de este commit, al hacer scroll prolongado, el usuario perdía el acceso inmediato al menú de navegación.
 
 **Problemas detectados:**
 
-- Riesgo de incoherencia con los criterios de evaluación
-- Posible penalización por no seguir las directrices del ejercicio
+- Navegación menos eficiente
+- Dificultad para cambiar de sección rápidamente
 
 ---
 
-### Necesidad de reorganizar el contenido existente
+### Transiciones abruptas entre secciones
 
-La introducción de secciones específicas por sitio web exigió replantear la organización del contenido dentro del `<main>`.
+El salto directo entre anclajes producía una experiencia de navegación brusca.
 
 **Problemas detectados:**
 
-- Necesidad de refactorizar sin romper el CSS existente
-- Mantener la claridad semántica del documento
+- Sensación de corte visual
+- Menor fluidez en la interacción
 
 ---
 
 ## ✅ Soluciones aplicadas
 
-### Alineación estricta con la propuesta docente
+### Implementación de navegación sticky
 
-Se adoptó de forma explícita la estructura HTML indicada por el profesor, priorizando el cumplimiento de los criterios académicos frente a decisiones personales de diseño.
+La navegación persistente permite al usuario acceder al menú en cualquier momento, mejorando la usabilidad general del sitio.
 
 ---
 
-### Uso de secciones independientes y semánticas
+### Uso de scroll suave mediante CSS
 
-Cada sitio web analizado se encapsuló dentro de una `<section>` con su correspondiente encabezado `<h2>`, facilitando la lectura, el análisis y la futura ampliación del contenido.
+El scroll suave se resolvió de forma nativa con CSS, evitando la necesidad de JavaScript y manteniendo el proyecto ligero y accesible.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit pone de manifiesto la importancia de adaptar un proyecto a un contexto académico concreto.
+Este commit demuestra cómo pequeñas mejoras en CSS pueden tener un impacto significativo en la experiencia de usuario.
 
 Principales aprendizajes:
 
-- La semántica HTML es clave en proyectos de análisis y documentación
-- Seguir directrices docentes forma parte del trabajo profesional
-- Refactorizar estructura sin romper estilos es una habilidad fundamental
-- Un buen HTML facilita la escalabilidad y el análisis posterior
+- La navegación es un elemento clave en sitios de análisis extensos
+- CSS moderno permite resolver interacciones sin JavaScript
+- Las microinteracciones mejoran la percepción de calidad del sitio
+- Seguir propuestas docentes refuerza el rigor académico del proyecto
 
 ---
 
 ## 📍 Estado actual del proyecto
 
-- Estructura HTML alineada con la propuesta docente
-- Navegación interna funcional
-- Documento preparado para desarrollar análisis detallados por sección
-- Base sólida para introducir contenido analítico y JavaScript en próximos commits
+- Navegación persistente implementada
+- Scroll suave funcional entre secciones
+- Estados interactivos accesibles en el menú
+- Proyecto preparado para introducir contenido analítico avanzado o JavaScript

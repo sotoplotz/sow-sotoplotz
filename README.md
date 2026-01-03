@@ -1,93 +1,86 @@
-## 🧩 Commit 7  
+## 🧩 Commit 9  
 
-### Integración de iframe para visualización del sitio Dropbox Brand
+### Integración del análisis web de un sitio sobresaliente de Awwwards
 
-**Commit:** `feat: integración de iframe para visualización del sitio Dropbox Brand`
+**Commit:** `feat: integración del análisis web de sitio sobresaliente de Awwwards`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es integrar una vista embebida del sitio web analizado mediante un iframe, permitiendo al usuario observar directamente la web original sin abandonar la aplicación de análisis.
+El objetivo de este commit es integrar el análisis crítico de un sitio web galardonado por Awwwards dentro de la aplicación de análisis web.
 
-Esta funcionalidad refuerza el carácter comparativo y académico del proyecto, facilitando la relación entre el análisis teórico y el resultado visual real.
+Este sitio se incorpora siguiendo la misma estructura metodológica utilizada en análisis anteriores, reforzando la coherencia y el rigor académico del proyecto.
 
 ---
 
-## 📚 Relación con la guía docente y la práctica
+## 📚 Relación con la guía docente
 
-Este commit se vincula con los siguientes contenidos de la asignatura:
+Este commit se relaciona directamente con:
 
-- Inserción de elementos multimedia en HTML
-- Uso del iframe como recurso de análisis y documentación
-- Evaluación visual directa de sitios web sobresalientes
-- Relación entre teoría, diseño y ejecución real
-- Desarrollo de interfaces web orientadas al análisis crítico
+- Análisis de sitios web premiados
+- Evaluación de diseño experimental y narrativo
+- Estudio de experiencias inmersivas en la web
+- Capacidad de análisis crítico y argumentado
+- Uso correcto de HTML semántico
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-### Integración de iframe en HTML
+### Integración estructurada del análisis
 
-Se ha incorporado un iframe dentro de la sección correspondiente al sitio Dropbox Brand, utilizando los siguientes atributos:
+El análisis se ha integrado mediante:
 
-- `src`: URL del sitio original
-- `title`: descripción accesible del contenido embebido
-- `loading="lazy"`: optimización de carga
-- `referrerpolicy="no-referrer"`: mejora de privacidad
+- Una sección dedicada (`<section>`)
+- Artículos temáticos (`<article>`)
+- Encabezados jerárquicos claros
+- Inclusión de iframe como apoyo visual
 
-El iframe se presenta como un recurso complementario al análisis textual.
+Esta estructura facilita la lectura y la ampliación futura del contenido.
 
 ---
 
-### Estilizado y adaptación responsive
+### Uso del iframe como herramienta de análisis
 
-El iframe se ha encapsulado dentro de un contenedor específico (`.site-preview`) y se ha adaptado para ocupar el ancho completo del layout, con una altura controlada y bordes suaves.
+El iframe permite observar el sitio original directamente dentro del proyecto, favoreciendo la comparación entre el análisis teórico y la experiencia visual real.
 
-Esta solución garantiza una correcta visualización en distintos tamaños de pantalla.
+Se ha acompañado de texto contextual para justificar su uso académico.
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Posible bloqueo de iframes por parte de sitios externos
+### Exceso potencial de estímulos visuales
 
-Algunos sitios web restringen su visualización dentro de iframes mediante encabezados de seguridad.
+El sitio analizado presenta un alto nivel de animación, lo que puede afectar:
 
-**Problemas detectados:**
-
-- Riesgo de que el contenido no se muestre en el futuro
-- Dependencia de políticas externas
+- Accesibilidad
+- Comprensión del contenido
+- Rendimiento en dispositivos menos potentes
 
 ---
 
-## ✅ Soluciones aplicadas
+## ✅ Soluciones y enfoque crítico
 
-### Uso del iframe con finalidad académica y contextualizada
-
-El iframe se utiliza exclusivamente como herramienta de análisis visual, acompañado de texto explicativo y sin sustituir el análisis crítico.
-
-Además, el proyecto mantiene sentido y coherencia incluso si el iframe no pudiera mostrarse en algún navegador.
+El análisis no se limita a describir el sitio, sino que incluye una valoración crítica, señalando tanto sus virtudes como sus posibles limitaciones desde una perspectiva de experiencia de usuario.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit demuestra cómo los elementos embebidos pueden enriquecer el análisis web cuando se utilizan con criterio.
+Este commit permite comprender:
 
-Principales aprendizajes:
-
-- El iframe es un recurso útil para análisis comparativos
-- Es importante acompañar los elementos técnicos con contexto académico
-- La accesibilidad y la optimización deben considerarse incluso en contenido embebido
-- El análisis web se beneficia de la observación directa del producto final
+- Cómo Awwwards valora la innovación y el riesgo creativo
+- La importancia del equilibrio entre impacto visual y accesibilidad
+- El papel del diseño narrativo en la web contemporánea
+- La necesidad de evaluar experiencias inmersivas de forma crítica
 
 ---
 
 ## 📍 Estado actual del proyecto
 
-- Análisis textual y visual integrados
-- Vista directa del sitio Dropbox Brand dentro de la aplicación
-- Experiencia de usuario enriquecida
-- Proyecto preparado para integrar nuevos análisis con el mismo patrón
+- Dos análisis web integrados (Webby + Awwwards)
+- Metodología clara y repetible
+- Proyecto con alto valor académico y crítico
+- Base sólida para comparativas entre premios web

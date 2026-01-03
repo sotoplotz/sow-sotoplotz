@@ -219,3 +219,30 @@ nav ul li a.active {
 	color: #007acc;
 	border-bottom: 2px solid #007acc;
 }
+
+/* =========================
+   Vista embebida del sitio analizado
+   ========================= */
+
+.site-preview {
+	margin: 2.5rem 0;
+}
+
+.site-preview h3 {
+	margin-bottom: 1rem;
+}
+
+.site-preview iframe {
+	width: 100%;
+	height: 600px;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.site-note {
+	font-size: 0.9rem;
+	color: #555555;
+	margin-top: 0.75rem;
+	max-width: 70ch;
+}

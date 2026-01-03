@@ -1,120 +1,93 @@
-## 🧩 Commit 6  
+## 🧩 Commit 7  
 
-### Resaltado dinámico de la sección activa mediante JavaScript
+### Integración de iframe para visualización del sitio Dropbox Brand
 
-**Commit:** `feat: resaltado dinámico de sección activa mediante JavaScript`
+**Commit:** `feat: integración de iframe para visualización del sitio Dropbox Brand`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es mejorar la orientación del usuario dentro del documento mediante la incorporación de JavaScript para resaltar dinámicamente la sección activa en el menú de navegación.
+El objetivo de este commit es integrar una vista embebida del sitio web analizado mediante un iframe, permitiendo al usuario observar directamente la web original sin abandonar la aplicación de análisis.
 
-Esta funcionalidad resulta especialmente útil en sitios de análisis extensos, donde el usuario necesita identificar en todo momento la sección que está consultando.
+Esta funcionalidad refuerza el carácter comparativo y académico del proyecto, facilitando la relación entre el análisis teórico y el resultado visual real.
 
 ---
 
-## 📚 Relación con la guía docente
+## 📚 Relación con la guía docente y la práctica
 
 Este commit se vincula con los siguientes contenidos de la asignatura:
 
-- Introducción a JavaScript
-- Lenguajes orientados a eventos
-- Manipulación del DOM
-- Mejora de la experiencia de usuario mediante interactividad
-- Uso consciente y justificado de JavaScript
+- Inserción de elementos multimedia en HTML
+- Uso del iframe como recurso de análisis y documentación
+- Evaluación visual directa de sitios web sobresalientes
+- Relación entre teoría, diseño y ejecución real
+- Desarrollo de interfaces web orientadas al análisis crítico
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-### Selección de elementos del DOM
+### Integración de iframe en HTML
 
-Se han seleccionado mediante JavaScript:
+Se ha incorporado un iframe dentro de la sección correspondiente al sitio Dropbox Brand, utilizando los siguientes atributos:
 
-- Todas las secciones principales del documento (`<section>`)
-- Todos los enlaces del menú de navegación
+- `src`: URL del sitio original
+- `title`: descripción accesible del contenido embebido
+- `loading="lazy"`: optimización de carga
+- `referrerpolicy="no-referrer"`: mejora de privacidad
 
-Esto permite relacionar cada enlace con su sección correspondiente.
-
----
-
-### Detección de la sección visible
-
-Se ha implementado una función que evalúa la posición del scroll y determina qué sección está actualmente visible en la ventana del navegador.
-
-La lógica se basa en:
-
-- La posición vertical del scroll (`window.scrollY`)
-- La posición y altura de cada sección
+El iframe se presenta como un recurso complementario al análisis textual.
 
 ---
 
-### Actualización dinámica del estado activo
+### Estilizado y adaptación responsive
 
-En función de la sección visible:
+El iframe se ha encapsulado dentro de un contenedor específico (`.site-preview`) y se ha adaptado para ocupar el ancho completo del layout, con una altura controlada y bordes suaves.
 
-- Se elimina la clase `active` de todos los enlaces
-- Se aplica la clase `active` únicamente al enlace correspondiente
-
-Este proceso se ejecuta en respuesta al evento `scroll`.
+Esta solución garantiza una correcta visualización en distintos tamaños de pantalla.
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Falta de referencia visual durante el scroll
+### Posible bloqueo de iframes por parte de sitios externos
 
-Antes de este commit, el usuario no disponía de una indicación clara sobre qué sección estaba visualizando.
-
-**Problemas detectados:**
-
-- Desorientación en documentos largos
-- Navegación menos eficiente
-
----
-
-### Riesgo de uso excesivo de JavaScript
-
-Era necesario evitar una solución compleja o innecesariamente pesada.
+Algunos sitios web restringen su visualización dentro de iframes mediante encabezados de seguridad.
 
 **Problemas detectados:**
 
-- Posible sobreingeniería
-- Impacto negativo en rendimiento y legibilidad del código
+- Riesgo de que el contenido no se muestre en el futuro
+- Dependencia de políticas externas
 
 ---
 
 ## ✅ Soluciones aplicadas
 
-### JavaScript ligero y orientado a eventos
+### Uso del iframe con finalidad académica y contextualizada
 
-Se optó por una solución sencilla, basada en eventos y sin dependencias externas, manteniendo el código claro y comprensible.
+El iframe se utiliza exclusivamente como herramienta de análisis visual, acompañado de texto explicativo y sin sustituir el análisis crítico.
 
----
-
-### Complemento visual mediante CSS
-
-La clase `active` se gestiona desde JavaScript, pero su representación visual se define en CSS, respetando la separación entre comportamiento y presentación.
+Además, el proyecto mantiene sentido y coherencia incluso si el iframe no pudiera mostrarse en algún navegador.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit demuestra cómo JavaScript puede mejorar la experiencia de usuario cuando se utiliza de forma medida y justificada.
+Este commit demuestra cómo los elementos embebidos pueden enriquecer el análisis web cuando se utilizan con criterio.
 
 Principales aprendizajes:
 
-- JavaScript debe responder a necesidades reales de interacción
-- La manipulación del DOM permite crear interfaces más claras y usables
-- Separar lógica y presentación mejora la mantenibilidad del proyecto
-- La interactividad debe reforzar, no complicar, la experiencia de usuario
+- El iframe es un recurso útil para análisis comparativos
+- Es importante acompañar los elementos técnicos con contexto académico
+- La accesibilidad y la optimización deben considerarse incluso en contenido embebido
+- El análisis web se beneficia de la observación directa del producto final
 
 ---
 
 ## 📍 Estado actual del proyecto
 
-- Navegación dinámica y contextual
-- Usuario siempre orientado dentro del contenido
-- Integración equilibrada de HTML, CSS y JavaScript
-- Proyecto preparado para profundizar en el análisis de contenido o microinteracciones avanzadas
+- Análisis textual y visual integrados
+- Vista directa del sitio Dropbox Brand dentro de la aplicación
+- Experiencia de usuario enriquecida
+- Proyecto preparado para integrar nuevos análisis con el mismo patrón

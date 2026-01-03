@@ -1,128 +1,120 @@
-## 🧩 Commit 5  
+## 🧩 Commit 6  
 
-### Navegación sticky, scroll suave y mejoras de interacción
+### Resaltado dinámico de la sección activa mediante JavaScript
 
-**Commit:** `feat: navegación sticky, scroll suave y mejoras de interacción`
+**Commit:** `feat: resaltado dinámico de sección activa mediante JavaScript`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es mejorar la experiencia de navegación del sitio web mediante la implementación de una barra de navegación persistente (sticky), un comportamiento de scroll suave y estados interactivos en los enlaces del menú.
+El objetivo de este commit es mejorar la orientación del usuario dentro del documento mediante la incorporación de JavaScript para resaltar dinámicamente la sección activa en el menú de navegación.
 
-Estas mejoras refuerzan la usabilidad del sitio y facilitan la exploración del contenido analítico, especialmente en documentos largos.
+Esta funcionalidad resulta especialmente útil en sitios de análisis extensos, donde el usuario necesita identificar en todo momento la sección que está consultando.
 
 ---
 
-## 📚 Relación con la guía docente y la práctica
+## 📚 Relación con la guía docente
 
-Este commit se alinea con los siguientes contenidos de la asignatura:
+Este commit se vincula con los siguientes contenidos de la asignatura:
 
-- Patrones UI de navegación
-- Mejora de la experiencia de usuario (UX)
-- Uso de propiedades modernas de CSS
-- Microinteracciones y feedback visual
-- Análisis de patrones reales utilizados en sitios premiados
-
-La implementación sigue la propuesta técnica facilitada por el profesor en la práctica.
+- Introducción a JavaScript
+- Lenguajes orientados a eventos
+- Manipulación del DOM
+- Mejora de la experiencia de usuario mediante interactividad
+- Uso consciente y justificado de JavaScript
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-### Navegación persistente (sticky)
+### Selección de elementos del DOM
 
-Se ha aplicado la propiedad `position: sticky` a la etiqueta `<nav>`, permitiendo que el menú de navegación permanezca visible en la parte superior de la pantalla durante el desplazamiento vertical.
+Se han seleccionado mediante JavaScript:
 
-Este patrón mejora la accesibilidad al contenido y facilita el cambio entre secciones.
+- Todas las secciones principales del documento (`<section>`)
+- Todos los enlaces del menú de navegación
 
----
-
-### Scroll suave entre secciones
-
-Se ha incorporado la propiedad `scroll-behavior: smooth` a la etiqueta `<html>`, logrando una transición suave al navegar entre las distintas secciones mediante enlaces internos.
-
-Este comportamiento mejora la percepción de fluidez y la experiencia de usuario.
+Esto permite relacionar cada enlace con su sección correspondiente.
 
 ---
 
-### Estilos visuales del header
+### Detección de la sección visible
 
-El encabezado del sitio se ha reforzado visualmente mediante:
+Se ha implementado una función que evalúa la posición del scroll y determina qué sección está actualmente visible en la ventana del navegador.
 
-- Fondo blanco
-- Sombra suave (`box-shadow`)
+La lógica se basa en:
 
-Esta decisión permite separar visualmente la navegación del contenido principal y mejora la jerarquía visual del sitio.
+- La posición vertical del scroll (`window.scrollY`)
+- La posición y altura de cada sección
 
 ---
 
-### Estados interactivos en enlaces
+### Actualización dinámica del estado activo
 
-Se han definido estados `:hover` y `:focus` para los enlaces del menú de navegación, proporcionando feedback visual al usuario.
+En función de la sección visible:
 
-Estos estados:
+- Se elimina la clase `active` de todos los enlaces
+- Se aplica la clase `active` únicamente al enlace correspondiente
 
-- Mejoran la usabilidad
-- Refuerzan la accesibilidad mediante navegación por teclado
-- Aportan claridad en la interacción
+Este proceso se ejecuta en respuesta al evento `scroll`.
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Pérdida de referencia al desplazarse por el documento
+### Falta de referencia visual durante el scroll
 
-Antes de este commit, al hacer scroll prolongado, el usuario perdía el acceso inmediato al menú de navegación.
+Antes de este commit, el usuario no disponía de una indicación clara sobre qué sección estaba visualizando.
 
 **Problemas detectados:**
 
+- Desorientación en documentos largos
 - Navegación menos eficiente
-- Dificultad para cambiar de sección rápidamente
 
 ---
 
-### Transiciones abruptas entre secciones
+### Riesgo de uso excesivo de JavaScript
 
-El salto directo entre anclajes producía una experiencia de navegación brusca.
+Era necesario evitar una solución compleja o innecesariamente pesada.
 
 **Problemas detectados:**
 
-- Sensación de corte visual
-- Menor fluidez en la interacción
+- Posible sobreingeniería
+- Impacto negativo en rendimiento y legibilidad del código
 
 ---
 
 ## ✅ Soluciones aplicadas
 
-### Implementación de navegación sticky
+### JavaScript ligero y orientado a eventos
 
-La navegación persistente permite al usuario acceder al menú en cualquier momento, mejorando la usabilidad general del sitio.
+Se optó por una solución sencilla, basada en eventos y sin dependencias externas, manteniendo el código claro y comprensible.
 
 ---
 
-### Uso de scroll suave mediante CSS
+### Complemento visual mediante CSS
 
-El scroll suave se resolvió de forma nativa con CSS, evitando la necesidad de JavaScript y manteniendo el proyecto ligero y accesible.
+La clase `active` se gestiona desde JavaScript, pero su representación visual se define en CSS, respetando la separación entre comportamiento y presentación.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit demuestra cómo pequeñas mejoras en CSS pueden tener un impacto significativo en la experiencia de usuario.
+Este commit demuestra cómo JavaScript puede mejorar la experiencia de usuario cuando se utiliza de forma medida y justificada.
 
 Principales aprendizajes:
 
-- La navegación es un elemento clave en sitios de análisis extensos
-- CSS moderno permite resolver interacciones sin JavaScript
-- Las microinteracciones mejoran la percepción de calidad del sitio
-- Seguir propuestas docentes refuerza el rigor académico del proyecto
+- JavaScript debe responder a necesidades reales de interacción
+- La manipulación del DOM permite crear interfaces más claras y usables
+- Separar lógica y presentación mejora la mantenibilidad del proyecto
+- La interactividad debe reforzar, no complicar, la experiencia de usuario
 
 ---
 
 ## 📍 Estado actual del proyecto
 
-- Navegación persistente implementada
-- Scroll suave funcional entre secciones
-- Estados interactivos accesibles en el menú
-- Proyecto preparado para introducir contenido analítico avanzado o JavaScript
+- Navegación dinámica y contextual
+- Usuario siempre orientado dentro del contenido
+- Integración equilibrada de HTML, CSS y JavaScript
+- Proyecto preparado para profundizar en el análisis de contenido o microinteracciones avanzadas

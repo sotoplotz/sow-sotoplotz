@@ -210,3 +210,12 @@ nav ul li a:focus {
 	color: #007acc;
 	outline: none;
 }
+
+/* =========================
+   Enlace activo en navegación
+   ========================= */
+
+nav ul li a.active {
+	color: #007acc;
+	border-bottom: 2px solid #007acc;
+}

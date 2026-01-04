@@ -1,69 +1,66 @@
-## 🧩 Commit 9  
+## 🧩 Commit 10  
 
-### Integración del análisis web de un sitio sobresaliente de Awwwards
+### Integración del análisis web de un sitio sobresaliente de FWA
 
-**Commit:** `feat: integración del análisis web de sitio sobresaliente de Awwwards`
+**Commit:** `feat: integración del análisis web de sitio sobresaliente de FWA`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es integrar el análisis crítico de un sitio web galardonado por Awwwards dentro de la aplicación de análisis web.
+El objetivo de este commit es integrar el análisis crítico de un sitio web galardonado por FWA (Favourite Website Awards) dentro de la aplicación de análisis web.
 
-Este sitio se incorpora siguiendo la misma estructura metodológica utilizada en análisis anteriores, reforzando la coherencia y el rigor académico del proyecto.
+Este análisis amplía la comparativa entre distintos tipos de premios web, incorporando un enfoque donde la innovación técnica se equilibra con la usabilidad.
 
 ---
 
 ## 📚 Relación con la guía docente
 
-Este commit se relaciona directamente con:
+Este commit se relaciona con:
 
-- Análisis de sitios web premiados
-- Evaluación de diseño experimental y narrativo
-- Estudio de experiencias inmersivas en la web
-- Capacidad de análisis crítico y argumentado
-- Uso correcto de HTML semántico
+- Análisis comparativo de sitios premiados
+- Evaluación de experiencias web avanzadas
+- Estudio del uso del scroll como recurso narrativo
+- Aplicación de HTML semántico para contenido analítico
+- Desarrollo de pensamiento crítico en diseño web
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-### Integración estructurada del análisis
+### Integración estructurada del contenido
 
 El análisis se ha integrado mediante:
 
-- Una sección dedicada (`<section>`)
-- Artículos temáticos (`<article>`)
-- Encabezados jerárquicos claros
-- Inclusión de iframe como apoyo visual
+- Una sección específica para el sitio FWA
+- Artículos temáticos claramente diferenciados
+- Encabezados jerárquicos coherentes
+- Inclusión de iframe para visualización directa del sitio
 
-Esta estructura facilita la lectura y la ampliación futura del contenido.
+Esta estructura mantiene la coherencia con los commits anteriores.
 
 ---
 
-### Uso del iframe como herramienta de análisis
+### Uso del iframe como apoyo visual
 
-El iframe permite observar el sitio original directamente dentro del proyecto, favoreciendo la comparación entre el análisis teórico y la experiencia visual real.
-
-Se ha acompañado de texto contextual para justificar su uso académico.
+El iframe permite observar el sitio original dentro del entorno de análisis, facilitando la relación entre el análisis textual y la experiencia visual real.
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Exceso potencial de estímulos visuales
+### Uso intensivo de scroll animado
 
-El sitio analizado presenta un alto nivel de animación, lo que puede afectar:
+El scroll controlado puede afectar a:
 
-- Accesibilidad
-- Comprensión del contenido
-- Rendimiento en dispositivos menos potentes
+- Usuarios con necesidades de accesibilidad
+- Preferencias de navegación más tradicionales
 
 ---
 
-## ✅ Soluciones y enfoque crítico
+## ✅ Enfoque crítico y soluciones planteadas
 
-El análisis no se limita a describir el sitio, sino que incluye una valoración crítica, señalando tanto sus virtudes como sus posibles limitaciones desde una perspectiva de experiencia de usuario.
+El análisis incorpora una valoración crítica que reconoce tanto las virtudes del sitio como sus posibles limitaciones, proponiendo mejoras desde una perspectiva de experiencia de usuario.
 
 ---
 
@@ -71,16 +68,16 @@ El análisis no se limita a describir el sitio, sino que incluye una valoración
 
 Este commit permite comprender:
 
-- Cómo Awwwards valora la innovación y el riesgo creativo
-- La importancia del equilibrio entre impacto visual y accesibilidad
-- El papel del diseño narrativo en la web contemporánea
-- La necesidad de evaluar experiencias inmersivas de forma crítica
+- Los criterios de valoración de FWA
+- Cómo equilibrar animación y usabilidad
+- La importancia del rendimiento en experiencias complejas
+- El valor del análisis crítico en proyectos web
 
 ---
 
 ## 📍 Estado actual del proyecto
 
-- Dos análisis web integrados (Webby + Awwwards)
+- Tres análisis web integrados (Webby, Awwwards, FWA)
 - Metodología clara y repetible
-- Proyecto con alto valor académico y crítico
-- Base sólida para comparativas entre premios web
+- Proyecto altamente coherente y bien documentado
+- Preparado para completar el cuarto análisis

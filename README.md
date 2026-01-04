@@ -1,85 +1,58 @@
-## 🧩 Commit 12  
+## 🧩 Commit 13  
 
-### Incorporación de tabla comparativa de sitios web sobresalientes
+### Incorporación de favicon mediante CDN externo (ImageKit)
 
-**Commit:** `feat: incorporación de tabla comparativa de sitios web sobresalientes`
+**Commit:** `feat: incorporación de favicon mediante CDN externo (ImageKit)`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es sintetizar los análisis individuales realizados previamente mediante la incorporación de una tabla comparativa.
-
-Esta tabla permite evaluar de forma global las características principales de cada sitio web, facilitando la identificación de patrones, diferencias y enfoques dentro del diseño web contemporáneo.
+El objetivo de este commit es incorporar un favicon al proyecto utilizando un recurso externo servido desde un CDN (ImageKit), aplicando buenas prácticas de optimización y gestión de recursos web vistas en clase.
 
 ---
 
-## 📚 Relación con la guía docente
+## 📚 Relación con los contenidos de la asignatura
 
-Este commit se vincula directamente con:
+Este commit aplica conocimientos relacionados con:
 
-- Análisis comparativo de productos digitales
-- Evaluación crítica de diseño web
-- Capacidad de síntesis y estructuración de información
-- Comunicación clara de conclusiones intermedias
-- Uso semántico de tablas en HTML
+- Uso de recursos externos en proyectos web
+- CDNs (Content Delivery Networks)
+- Optimización de recursos estáticos
+- Identidad visual básica en sitios web
+- Buenas prácticas profesionales en desarrollo front-end
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-### Creación de una sección de comparativa
+Se ha añadido un favicon al sitio mediante un enlace externo alojado en ImageKit, evitando la necesidad de almacenar el recurso localmente.
 
-Se ha incorporado una nueva sección específica para la comparativa, utilizando:
-
-- `<section>` para delimitar el bloque
-- `<table>`, `<thead>` y `<tbody>` para estructurar los datos
-- Encabezados claros que resumen los criterios de análisis
+El favicon se carga a través de la etiqueta `<link rel="icon">` dentro del `<head>`, cumpliendo con los estándares HTML actuales.
 
 ---
 
-### Estilizado orientado a la legibilidad
+## ⚠️ Problemas detectados antes del commit
 
-La tabla se ha estilizado para:
-
-- Facilitar la lectura horizontal
-- Mantener coherencia visual con el resto del proyecto
-- Garantizar visualización correcta en dispositivos pequeños mediante scroll horizontal
+Antes de este commit, el sitio carecía de un favicon, lo que afectaba negativamente a la identidad visual y a la percepción de calidad del proyecto.
 
 ---
 
-## ⚠️ Problemas detectados durante el desarrollo
+## ✅ Solución aplicada
 
-### Riesgo de sobrecarga visual
-
-Las tablas extensas pueden resultar difíciles de leer en pantallas pequeñas.
-
----
-
-## ✅ Soluciones aplicadas
-
-### Contenedor con scroll horizontal
-
-Se ha encapsulado la tabla en un contenedor con desplazamiento horizontal, asegurando accesibilidad y usabilidad en entornos responsive.
+Se ha utilizado ImageKit como CDN externo para servir el favicon, mejorando la eficiencia en la carga del recurso y demostrando un uso consciente de herramientas de optimización web.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit demuestra la importancia de la comparación como herramienta de análisis.
-
-Principales aprendizajes:
-
-- La síntesis es clave en el análisis académico
-- Las tablas facilitan la comprensión de grandes volúmenes de información
-- Comparar distintos enfoques de diseño permite extraer conclusiones más profundas
-- El diseño web debe equilibrar creatividad, usabilidad y accesibilidad
+Este commit refuerza la idea de que incluso elementos pequeños como un favicon pueden gestionarse de forma profesional, aplicando criterios de rendimiento, escalabilidad y buenas prácticas técnicas.
 
 ---
 
-## 📍 Estado actual del proyecto
+## 📍 Estado del proyecto tras el commit
 
-- Análisis individuales completos
-- Comparativa global integrada
-- Proyecto en fase final
-- Preparado para conclusiones académicas definitivas
+- Favicon integrado correctamente
+- Uso de CDN externo aplicado
+- Mejora de la identidad visual
+- Proyecto alineado con prácticas profesionales reales

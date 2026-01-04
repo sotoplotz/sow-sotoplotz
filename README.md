@@ -1,58 +1,70 @@
-## 🧩 Commit 13  
+## 🧩 Commit 14  
 
-### Incorporación de favicon mediante CDN externo (ImageKit)
+### Mejora de SEO y compartición social mediante metadatos Open Graph
 
-**Commit:** `feat: incorporación de favicon mediante CDN externo (ImageKit)`
+**Commit:** `feat: mejora de SEO y compartición social mediante metadatos Open Graph`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es incorporar un favicon al proyecto utilizando un recurso externo servido desde un CDN (ImageKit), aplicando buenas prácticas de optimización y gestión de recursos web vistas en clase.
+El objetivo de este commit es mejorar el posicionamiento semántico y la presentación del sitio web mediante la incorporación de metadatos SEO y Open Graph, aplicando estándares actuales de desarrollo web.
+
+Estos metadatos permiten definir cómo se muestra el sitio tanto en motores de búsqueda como al ser compartido en redes sociales.
 
 ---
 
 ## 📚 Relación con los contenidos de la asignatura
 
-Este commit aplica conocimientos relacionados con:
+Este commit se relaciona con:
 
-- Uso de recursos externos en proyectos web
-- CDNs (Content Delivery Networks)
-- Optimización de recursos estáticos
-- Identidad visual básica en sitios web
-- Buenas prácticas profesionales en desarrollo front-end
+- SEO on-page
+- Metadatos HTML avanzados
+- Open Graph Protocol
+- Compartición de contenido en redes sociales
+- Buenas prácticas profesionales de desarrollo web
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-Se ha añadido un favicon al sitio mediante un enlace externo alojado en ImageKit, evitando la necesidad de almacenar el recurso localmente.
+Se han incorporado los siguientes elementos en el `<head>` del documento:
 
-El favicon se carga a través de la etiqueta `<link rel="icon">` dentro del `<head>`, cumpliendo con los estándares HTML actuales.
+- Etiqueta `<title>` optimizada
+- Meta description y keywords
+- Meta author
+- Metadatos Open Graph (`og:title`, `og:description`, `og:type`, `og:url`, `og:image`)
+
+Estos elementos mejoran la comprensión del contenido por parte de motores de búsqueda y plataformas sociales.
 
 ---
 
 ## ⚠️ Problemas detectados antes del commit
 
-Antes de este commit, el sitio carecía de un favicon, lo que afectaba negativamente a la identidad visual y a la percepción de calidad del proyecto.
+Antes de este commit, el sitio carecía de metadatos que definieran su presentación en redes sociales, lo que limitaba su visibilidad y profesionalidad al ser compartido.
 
 ---
 
 ## ✅ Solución aplicada
 
-Se ha utilizado ImageKit como CDN externo para servir el favicon, mejorando la eficiencia en la carga del recurso y demostrando un uso consciente de herramientas de optimización web.
+Se ha implementado el protocolo Open Graph junto con SEO básico, asegurando una presentación coherente, clara y visualmente atractiva del proyecto en entornos externos.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit refuerza la idea de que incluso elementos pequeños como un favicon pueden gestionarse de forma profesional, aplicando criterios de rendimiento, escalabilidad y buenas prácticas técnicas.
+Este commit refuerza la importancia de:
+
+- Pensar el SEO más allá de los buscadores
+- Controlar la apariencia del contenido compartido
+- Aplicar estándares web actuales
+- Integrar metadatos como parte del diseño del proyecto
 
 ---
 
 ## 📍 Estado del proyecto tras el commit
 
-- Favicon integrado correctamente
-- Uso de CDN externo aplicado
-- Mejora de la identidad visual
-- Proyecto alineado con prácticas profesionales reales
+- SEO on-page implementado correctamente
+- Metadatos Open Graph activos
+- Proyecto preparado para compartición en redes
+- Aumento de la calidad técnica y profesional del sitio

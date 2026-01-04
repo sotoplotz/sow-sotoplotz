@@ -1,83 +1,85 @@
-## 🧩 Commit 11  
+## 🧩 Commit 12  
 
-### Integración del análisis web de un sitio sobresaliente de CSS Design Awards
+### Incorporación de tabla comparativa de sitios web sobresalientes
 
-**Commit:** `feat: integración del análisis web de sitio sobresaliente de CSS Design Awards`
+**Commit:** `feat: incorporación de tabla comparativa de sitios web sobresalientes`
 
 ---
 
 ## 🎯 Objetivo del commit
 
-El objetivo de este commit es integrar el análisis crítico de un sitio web galardonado por CSS Design Awards dentro de la aplicación de análisis web.
+El objetivo de este commit es sintetizar los análisis individuales realizados previamente mediante la incorporación de una tabla comparativa.
 
-Con este commit se completa el conjunto de cuatro sitios sobresalientes, uno por cada plataforma de referencia, permitiendo una visión global y comparativa del diseño web contemporáneo.
+Esta tabla permite evaluar de forma global las características principales de cada sitio web, facilitando la identificación de patrones, diferencias y enfoques dentro del diseño web contemporáneo.
 
 ---
 
 ## 📚 Relación con la guía docente
 
-Este commit se relaciona con:
+Este commit se vincula directamente con:
 
-- Análisis de excelencia en diseño UI
-- Evaluación de animaciones y microinteracciones
-- Estudio de la relación entre estética y usabilidad
-- Aplicación avanzada de HTML semántico
-- Desarrollo de pensamiento crítico en diseño web
+- Análisis comparativo de productos digitales
+- Evaluación crítica de diseño web
+- Capacidad de síntesis y estructuración de información
+- Comunicación clara de conclusiones intermedias
+- Uso semántico de tablas en HTML
 
 ---
 
 ## 🧱 Desarrollo técnico realizado
 
-### Integración estructurada del análisis
+### Creación de una sección de comparativa
 
-El análisis se ha integrado mediante:
+Se ha incorporado una nueva sección específica para la comparativa, utilizando:
 
-- Una sección dedicada a CSS Design Awards
-- Artículos temáticos organizados
-- Jerarquía clara de encabezados
-- Inclusión de iframe como apoyo visual
-
-Esta estructura mantiene la coherencia con los commits anteriores.
+- `<section>` para delimitar el bloque
+- `<table>`, `<thead>` y `<tbody>` para estructurar los datos
+- Encabezados claros que resumen los criterios de análisis
 
 ---
 
-### Uso del iframe como recurso visual
+### Estilizado orientado a la legibilidad
 
-El iframe permite observar directamente el sitio original, facilitando la evaluación de la interfaz, las animaciones y la experiencia real descrita en el análisis.
+La tabla se ha estilizado para:
+
+- Facilitar la lectura horizontal
+- Mantener coherencia visual con el resto del proyecto
+- Garantizar visualización correcta en dispositivos pequeños mediante scroll horizontal
 
 ---
 
 ## ⚠️ Problemas detectados durante el desarrollo
 
-### Intensidad visual y animaciones complejas
+### Riesgo de sobrecarga visual
 
-El sitio presenta un alto nivel de animación que puede afectar a:
-
-- Usuarios con sensibilidad al movimiento
-- Rendimiento en dispositivos menos potentes
+Las tablas extensas pueden resultar difíciles de leer en pantallas pequeñas.
 
 ---
 
-## ✅ Enfoque crítico aplicado
+## ✅ Soluciones aplicadas
 
-El análisis no se limita a describir el sitio, sino que evalúa sus decisiones de diseño desde una perspectiva crítica, identificando fortalezas y áreas de mejora relacionadas con accesibilidad y experiencia de usuario.
+### Contenedor con scroll horizontal
+
+Se ha encapsulado la tabla en un contenedor con desplazamiento horizontal, asegurando accesibilidad y usabilidad en entornos responsive.
 
 ---
 
 ## 🧠 Aprendizaje obtenido
 
-Este commit permite comprender:
+Este commit demuestra la importancia de la comparación como herramienta de análisis.
 
-- Los criterios de excelencia de CSS Design Awards
-- La importancia del detalle en el diseño UI
-- Cómo integrar animaciones sin comprometer la usabilidad
-- El valor del análisis comparativo en diseño web
+Principales aprendizajes:
+
+- La síntesis es clave en el análisis académico
+- Las tablas facilitan la comprensión de grandes volúmenes de información
+- Comparar distintos enfoques de diseño permite extraer conclusiones más profundas
+- El diseño web debe equilibrar creatividad, usabilidad y accesibilidad
 
 ---
 
 ## 📍 Estado actual del proyecto
 
-- Cuatro análisis web integrados (Webby, Awwwards, FWA, CSSDA)
-- Metodología académica consistente
-- Proyecto completo a nivel de contenido principal
-- Base sólida para conclusiones finales y comparativas
+- Análisis individuales completos
+- Comparativa global integrada
+- Proyecto en fase final
+- Preparado para conclusiones académicas definitivas

@@ -44,14 +44,14 @@ Cada análisis se presenta como un texto continuo acompañado de capturas visual
 
 ## 🧱 Estructura del proyecto
 
-´´´txt
+```txt
 /
 ├── index.html
 ├── index.css
 ├── README.md
 └── .vscode/
     └── settings.json
-´´´
+```
 
 ### `index.html`
 

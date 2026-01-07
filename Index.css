@@ -1,0 +1,265 @@
+/* =========================================================
+   RESET BÁSICO
+   Elimina márgenes por defecto y asegura box model coherente
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================
+   VARIABLES GLOBALES DE DISEÑO
+========================================================= */
+
+:root {
+  --color-light: #f4f1de;
+  --color-dark: #3d405b;
+  --color-accent: #f2cc8f;
+
+  --text-main: #1f2933;
+  --text-muted: #4b5563;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+
+  --max-width: 1200px;
+  --nav-height: 64px;
+}
+
+/* =========================================================
+   BASE DEL DOCUMENTO
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: inter-variable, inter, sans-serif;
+  background-color: var(--color-light);
+  color: var(--text-main);
+  line-height: 1.7;
+  padding-top: var(--nav-height);
+}
+
+/* =========================================================
+   HEADER Y PORTADA
+========================================================= */
+
+header {
+  background-color: var(--color-light);
+}
+
+/* Portada a pantalla completa */
+.cover {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark);
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  animation: fadeIn 1.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* =========================================================
+   NAVEGACIÓN FIJA
+========================================================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background-color: var(--color-dark);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+nav a {
+  color: var(--color-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--color-accent);
+  outline: none;
+}
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Cada sección */
+main > section {
+  padding: var(--space-lg) var(--space-md);
+  scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+/* Separador entre secciones */
+main > section + section {
+  border-top: 2px solid var(--color-dark);
+}
+
+/* =========================================================
+   TÍTULOS DE SECCIÓN
+========================================================= */
+
+h2 {
+  text-align: center;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--color-dark);
+  margin-bottom: var(--space-md);
+}
+
+/* =========================================================
+   ENLACE DESTACADO
+========================================================= */
+
+.big-link {
+  display: block;
+  text-align: center;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.big-link:hover,
+.big-link:focus {
+  color: var(--color-accent);
+}
+
+/* =========================================================
+   IFRAME GRANDE
+========================================================= */
+
+iframe {
+  width: 100%;
+  min-height: 65vh;
+  border: none;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  background-color: #ffffff;
+}
+
+/* =========================================================
+   BLOQUE ANÁLISIS: TARJETAS TEXTO + IMAGEN
+========================================================= */
+
+.analysis-text {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.container {
+  padding: var(--space-md);
+}
+
+/* Fila principal */
+.analysis-text > .container > div {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+/* Tarjeta de texto */
+.analysis-text [class$="-text"] {
+  flex: 1 1 55%;
+  background-color: #ffffff;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.analysis-text p {
+  color: var(--text-muted);
+}
+
+/* Tarjeta de imagen */
+/* Tarjeta de imágenes (columna vertical) */
+.analysis-text [class$="-images"] {
+  flex: 1 1 45%;
+  background-color: #ffffff;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;   /* imágenes de arriba abajo */
+  gap: var(--space-sm);     /* separación entre imágenes */
+}
+
+.analysis-text img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .analysis-text > .container > div {
+    flex-direction: column;
+  }
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+footer p {
+  font-size: 0.9rem;
+}

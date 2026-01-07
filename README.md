@@ -1,93 +1,145 @@
-# WEB ATELIER (UDIT) – Student Project Template
+# Some Outstanding Webs  
 
-_Critical Coding for a Better Living._
+### Análisis de Sitios Web Premiados
 
-**Build a real, accessible, multilingual site—commit every week.**
+## 📌 Descripción del proyecto
 
-This repository is the **starting point for each student’s personal project** in the WEB ATELIER (UDIT) framework. While `web-foundations` provides the canonical lessons and `professor-course-template` manages the class instance, the **Student Project Template** is where each student designs and develops their own site. Every week, students commit progress here — _one student · one repo · one project · one commit per class_.
+**Some Outstanding Webs** es un proyecto académico desarrollado para la asignatura de **Diseño de Aplicaciones Web y Web App**.  
+El objetivo principal del proyecto es analizar en profundidad una selección de sitios web sobresalientes, reconocidos por plataformas internacionales de premios de diseño digital, atendiendo tanto a aspectos visuales como a experiencia de usuario, tecnología y accesibilidad.
 
-## Purpose & Audience
+La web funciona como un **informe de análisis interactivo**, combinando contenido textual con vistas embebidas de los sitios originales mediante iframes, lo que permite observar directamente las decisiones de diseño analizadas.
 
-- **For Students:** A personal repository to build a web project step by step, following lessons. It deploys live via GitHub Pages.
-- **For Professors:** A window into each student’s weekly progress, commit history, and final project.
+---
 
-## Core Technologies (Deep Explanation)
+## 🎯 Objetivos del proyecto
 
-### GitHub Pages
+- Analizar sitios web premiados por plataformas de referencia internacional.
+- Identificar tendencias actuales en diseño web contemporáneo.
+- Evaluar aspectos de diseño visual, experiencia de usuario y tecnología.
+- Aplicar una estructura semántica correcta en HTML.
+- Desarrollar una interfaz clara, coherente y responsive mediante CSS.
+- Presentar el contenido de forma ordenada, legible y profesional.
 
-- Students enable Pages on their repo to publish their project live at a URL like `https://username.github.io/project`.
-- Automatic deployment: every commit to `main` updates the live site.
+---
 
-### Jekyll
+## 🏆 Sitios web analizados
 
-- Not required by students, but Pages uses Jekyll under the hood.
-- A `.nojekyll` file is provided to avoid conflicts unless Jekyll is explicitly needed.
+El proyecto incluye el análisis de cuatro sitios web sobresalientes, cada uno reconocido por una plataforma distinta:
 
-### GitHub Actions
+- **Immersive Garden** — Awwwards  
+  <https://immersive-g.com/>
 
-- Optional CI workflows included:
+- **Dropbox Brand Guidelines** — Webby Awards  
+  <https://brand.dropbox.com/>
 
-  - **Critical CI (Student):** checks links, page weight, and accessibility.
+- **Locomotive** — FWA (Favourite Website Awards)  
+  <https://locomotive.ca/>
 
-- Encouraged: students learn how professional developers automate quality checks.
+- **Active Theory** — CSS Design Awards  
+  <https://activetheory.net/>
 
-## Supporting Technologies (Overview)
+Cada análisis se presenta como un texto continuo acompañado de capturas visuales y una vista directa del sitio mediante iframe.
 
-- **Markdown:** for `README.md` and `project-brief.md`.
-- **YAML:** in `project.yaml` to describe project metadata (title, tagline, URL, etc.).
-- **Liquid:** not directly edited by students, but used in professor/course templates to display project info.
-- **JSON-LD:** added automatically by templates when projects are listed in the showroom.
+---
 
-## Repository Structure
+## 🧱 Estructura del proyecto
 
-```plaintext
-student-project-template/
-├── index.html         # Homepage (starter HTML with semantic structure)
-├── assets/            # Modern asset organization
-│   ├── css/
-│   │   └── style.css  # Main stylesheet with responsive design
-│   └── js/
-│       └── main.js    # JavaScript functionality
-├── images/            # Image assets (keep optimized)
-├── css/               # Legacy CSS (imports from assets/css/)
-│   └── style.css      # Compatibility layer
-├── project.yaml       # Project metadata (complete by Week 4)
-├── project-brief.md   # Project concept definition (Week 2)
-├── README.md          # Instructions and weekly progress log
-├── .nojekyll          # Prevents Jekyll processing conflicts
-└── .github/workflows/
-    └── critical.yml   # Automated quality checks (CI/CD)
-```
+´´´txt
+/
+├── index.html
+├── index.css
+├── README.md
+└── .vscode/
+    └── settings.json
+´´´
 
-## Workflow in Practice
+### `index.html`
 
-1. **Clone Template:** Student creates repo from this template.
-2. **Week 1:** Setup repo, push first commit (README updated).
-3. **Week 2:** Fill out `project-brief.md` and `project.yaml` (project definition).
-4. **Weekly Commits:** Update `index.html`, CSS, JS with new lessons. Each class → one commit.
-5. **Week 4:** Ensure `project.yaml` is complete; submit metadata to professor’s repo (via PR or form).
-6. **Week 5+:** Continue improving project; reflect on commits.
+Contiene la estructura semántica completa del sitio:
 
-## Scaling and Feedback
+- Header con portada y navegación fija
+- Secciones individuales para cada sitio analizado
+- Iframes embebidos para visualización directa
+- Bloques de análisis textual y visual
+- Footer informativo
 
-- **Commit Log:** Each commit is a trace of weekly learning.
-- **Peer Review:** In Week 5, peers view each other’s projects via the course showroom.
-- **CI Feedback:** Automated checks give quick signals (broken links, large assets, accessibility issues).
-- **Professor Review:** Spot-checks commits or reviews final project.
+### `index.css`
 
-## Differences from Other Repos
+Define el diseño visual del proyecto:
 
-- `web-foundations`: shared lessons & methodology, not edited by students.
-- `professor-course-template`: course-level repo with roster and showroom.
-- `student-project-template`: student’s own creative space; only this repo is graded per individual.
+- Sistema de colores coherente (claro, oscuro y acento)
+- Tipografía Inter mediante Adobe Fonts
+- Layout responsive y mobile first
+- Tarjetas para separar texto e imágenes
+- Jerarquía visual clara y legible
 
-## References
+### `.vscode/settings.json`
 
-- GitHub Pages – [https://docs.github.com/en/pages](https://docs.github.com/en/pages)
-- GitHub Actions – [https://docs.github.com/en/actions](https://docs.github.com/en/actions)
-- Jekyll (optional background) – [https://jekyllrb.com](https://jekyllrb.com)
-- Markdown Guide – [https://www.markdownguide.org](https://www.markdownguide.org)
-- YAML Introduction – [https://yaml.org/start.html](https://yaml.org/start.html)
-- Schema.org / JSON-LD – [https://schema.org](https://schema.org)
+Configuración del entorno de desarrollo para mantener consistencia en formato y estilo del código.
 
-© 2025 Rubén Vega Balbás, PhD — WEB ATELIER (UDIT) · ORCID: <https://orcid.org/0000-0001-6862-9081>
+---
+
+## 🎨 Diseño visual y criterios estéticos
+
+El diseño del proyecto sigue una estética **limpia y contemporánea**, basada en:
+
+- Uso predominante de blancos y tonos claros (`#f4f1de`)
+- Color oscuro para navegación y estructura (`#3d405b`)
+- Color acento para destacar elementos interactivos (`#f2cc8f`)
+- Tipografía **Inter**, priorizando legibilidad y neutralidad
+- Separación clara del contenido mediante tarjetas
+- Márgenes y espacios pensados para lectura cómoda en desktop y móvil
+
+El objetivo del diseño no es competir visualmente con los sitios analizados, sino **facilitar su comprensión y evaluación**.
+
+---
+
+## 📱 Diseño responsive
+
+El proyecto está desarrollado siguiendo un enfoque **mobile first**, asegurando:
+
+- Correcta visualización en dispositivos móviles
+- Reorganización vertical de columnas en pantallas pequeñas
+- Iframes adaptables al ancho disponible
+- Imágenes escalables y sin deformaciones
+
+---
+
+## 🧠 Metodología de análisis
+
+Cada sitio web se analiza atendiendo a los siguientes criterios, integrados en un texto continuo:
+
+- Identidad y contexto del sitio
+- Objetivo comunicativo
+- Público objetivo
+- Diseño visual
+- Experiencia de usuario (UX)
+- Aspectos tecnológicos
+- Accesibilidad y puntos de mejora
+- Conclusión crítica
+
+Esta metodología permite una evaluación global y coherente de cada proyecto.
+
+---
+
+## ⚠️ Nota sobre los iframes
+
+Los sitios web se muestran mediante iframes **exclusivamente con fines educativos y de análisis académico**.  
+Todos los derechos de los contenidos visualizados pertenecen a sus respectivos autores y propietarios.
+
+---
+
+## 👨‍🎓 Autor
+
+Proyecto desarrollado por el alumno como parte del curso **Web Atelier (UDIT)**  
+Asignatura: *Diseño de Aplicaciones Web y Web App*  
+Año académico: **2024–2025**
+
+---
+
+## 📚 Referencias
+
+- Awwwards — <https://www.awwwards.com/>
+- Webby Awards — <https://www.webbyawards.com/>
+- FWA — <https://thefwa.com/>
+- CSS Design Awards — <https://www.cssdesignawards.com/>
